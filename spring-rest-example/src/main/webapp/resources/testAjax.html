@@ -15,14 +15,25 @@
 		xhr.send(null);
 	};
 
-	get("http://localhost:9090/springRestExample/customers/202", function(data) {
-		document.getElementById("ajaxID").innerHTML = data;
+	get("http://localhost:9090/springRestExample/customers", function(data) {
+		document.getElementById("ajaxID01").innerHTML = data;
 	});
+
+	get("http://localhost:9090/springRestExample/customers/201", function(data) {
+		document.getElementById("ajaxID02").innerHTML = data;
+	});	
 </script>
 <body>
 
 	<h1>Test Ajax</h1>
-	<div id="ajaxID"></div>
+	<br/>
+
+	<h4>Test 01</h4>
+	<div id="ajaxID01"></div>
+	<br/>
+
+	<h4>Test 02</h4>
+	<div id="ajaxID02"></div>
 
 </body>
 </html>

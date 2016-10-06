@@ -71,24 +71,3 @@ public class CustomerRestController {
 	}
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
